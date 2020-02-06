@@ -21,7 +21,12 @@ def main():
 	for i in items_list:
 		print(str(i["quantity"]) +" " + i["name"] + " " +str(i["quantity"]*i["price"]))
 
-			#index +=1
+	print("-------------------")
+	x = 0
+	for i in items_list:
+		x += i["quantity"]*i["price"]
+	print(f"The total amount is {x}")
+	print("-------------------")
 
 
 if __name__ == '__main__':
